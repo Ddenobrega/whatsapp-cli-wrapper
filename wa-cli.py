@@ -42,14 +42,13 @@ chat_select = input("Who Would you like to chat with: ")
 driver.find_element_by_xpath(" //*[ contains (text(), '" + chat_select + "' )]").click()
 
 message_bar = driver.find_element_by_xpath(" //*[ contains (text(), 'Type a message')]")
-message_input = driver.find_element_by_xpath('/html/body/div/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div[2]/div/div[1]/div/div[2]')
+message_input = driver.find_element_by_xpath('/html/body/div/div[1]/div[1]/div[4]/div[1]/footer/div[1]/div[2]/div/div[1]/div')
 
 def message_send(ctx, args):
-    #message_bar.click()
-    message_bar.send_keys(args)
+   # message_bar.click()
+    message_input.send_keys(args)
 
 message_input_text = input("Test Message Send: ")
 message_send("", message_input_text)
-
 
 
