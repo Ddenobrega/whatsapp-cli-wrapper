@@ -7,3 +7,6 @@ Requirements
 
 # HELP WANTED
 pull requests greatly appreciated 
+
+# NOTE 
+selenium is not running in headless mode at the moment for debugging purposes 
